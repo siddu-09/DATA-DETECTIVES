@@ -1,4 +1,4 @@
-name: Add Two Numbers
+name: Add Three Numbers
 
 on:
   workflow_dispatch:
@@ -21,7 +21,7 @@ jobs:
   add:
     runs-on: ubuntu-latest
     steps:
-      - name: Add the two numbers
+      - name: Add the Three numbers
         env:
           NUM1: ${{ inputs.num1 }}
           NUM2: ${{ inputs.num2 }}
