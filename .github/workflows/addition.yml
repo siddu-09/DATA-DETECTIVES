@@ -22,4 +22,3 @@ jobs:
           echo "Second number: ${{ inputs.num2 }}"
           result=$(( ${{ inputs.num1 }} + ${{ inputs.num2 }} ))
           echo "Result: $result"
-ß
