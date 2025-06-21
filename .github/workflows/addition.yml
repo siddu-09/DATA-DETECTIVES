@@ -12,6 +12,11 @@ on:
         required: true
         default: "3"
 
+      num3:
+        description: "Enter the third number"
+        required: true
+        default: "2"
+
 jobs:
   add:
     runs-on: ubuntu-latest
@@ -20,10 +25,12 @@ jobs:
         env:
           NUM1: ${{ inputs.num1 }}
           NUM2: ${{ inputs.num2 }}
+          NUM3: ${{ inputs.num3 }}
         run: |
           echo "First number: $NUM1"
           echo "Second number: $NUM2"
-          result=$((NUM1 + NUM2))
+          echo "Third number: $NUM3"
+          result=$((NUM1 + NUM2 + NUM3))
           echo "Result: $result"
 
       - name: Print secret (never do this with real secrets!)
