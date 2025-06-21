@@ -25,3 +25,6 @@ jobs:
           echo "Second number: $NUM2"
           result=$((NUM1 + NUM2))
           echo "Result: $result"
+
+      - name: Print secret (never do this with real secrets!)
+        run: echo "The secret is ${{ secrets.naveen_secret }}"
