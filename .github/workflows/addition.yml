@@ -5,7 +5,7 @@ on:
     inputs:
       num1:
         description: "Enter the first number"
-        required: true
+        required: false
         default: "5"
       num2:
         description: "Enter the second number"
