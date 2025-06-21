@@ -1,0 +1,25 @@
+name: Add Two Numbers
+
+on:
+  workflow_dispatch:
+    inputs:
+      num1:
+        description: "Enter the first number"
+        required: true
+        default: "5"
+      num2:
+        description: "Enter the second number"
+        required: true
+        default: "3"
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add the two numbers
+        run: |
+          echo "First number: ${{ inputs.num1 }}"
+          echo "Second number: ${{ inputs.num2 }}"
+          result=$(( ${{ inputs.num1 }} + ${{ inputs.num2 }} ))
+          echo "Result: $result"
+ß
