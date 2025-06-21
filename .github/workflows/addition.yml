@@ -24,4 +24,4 @@ jobs:
           echo "First number: $NUM1"
           echo "Second number: $NUM2"
           result=$((NUM1 + NUM2))
-          echo "Result: $result"
+          naveen
